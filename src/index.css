@@ -1,0 +1,40 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/font.css);
+@import url(./componets/App/App.css);
+@import url(./componets/Header/Header.css);
+@import url(./componets/Banner/Banner.css);
+@import url(./componets/Main/Main.css);
+@import url(./componets/Promo/Promo.css);
+@import url(./componets/Techs/Techs.css);
+@import url(./componets/AboutMe/AboutMe.css);
+@import url(./componets/Portfolio/Portfolio.css);
+@import url(./componets/Footer/Footer.css);
+
+@import url(./componets/Movies/Movies.css);
+@import url(./componets/Register/Register.css);
+@import url(./componets/Login/Login.css);
+@import url(./componets/Error/Error.css);
+@import url(./componets/Profile/Profile.css);
+@import url(./componets/SearchForm/SearchForm.css);
+@import url(./componets/HeaderSearch/HeaderSearch.css);
+@import url(./componets/MoviesCardList/MoviesCardList.css);
+@import url(./componets/MovieCard/MovieCard.css);
+
+@import url(./blocks/burger-menu/burger-menu.css);
+@import url(./blocks/active.css);
+
+/* blocks form */
+@import url(./blocks/form/form.css);
+@import url(./blocks/form/__status-ask/from__status-ask.css);
+@import url(./blocks/form/__name-span/form__name-span.css);
+@import url(./blocks/form/__input/form__input.css);
+@import url(./blocks/form/__greeting/form__greeting.css);
+@import url(./blocks/form/__error-span/form__error-span.css);
+@import url(./blocks/form/__container/form__container.css);
+@import url(./blocks/form/__button/form__button.css);
+@import url(./blocks/form/__button/_place/form__button_place_register.css);
+@import url(./blocks/form/__button/_place/from__button_place_login.css);
+@import url(./blocks/form/__input/_place/form__input_place_edit.css);
+@import url(./blocks/form/__container/_place/form__container_place_edit.css);
+@import url(./blocks/form/__greeting/_place/form__greeting_place_edit.css);
+@import url(./blocks/form/__link-in/form__link-in.css);

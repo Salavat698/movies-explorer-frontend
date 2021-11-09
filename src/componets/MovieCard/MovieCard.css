@@ -1,0 +1,59 @@
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.movie-card__container{
+    width: 100%;
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.movie-card__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-left: 33px;
+ 
+}
+.movie-card__name{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0;
+    margin-top: 25px;
+
+}
+.movie-card__time{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #A0A0A0;
+    margin: 0;
+    margin-top: 13px;
+
+}
+.movie-card__save{
+    width: 14px;
+    height: 12px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 19px;
+}
+.movie-card__image{
+    width: 220px;
+    height: 122px;
+}
+@media (max-width:350px) {
+    .movie-card__image{
+        width: 200px;
+    }
+}

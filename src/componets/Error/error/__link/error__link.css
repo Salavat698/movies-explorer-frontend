@@ -1,0 +1,26 @@
+.error__link {
+    /* color: #0000; */
+    background-color: transparent;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 60px;
+    top: 585px;
+  }
+  @media screen and (max-width: 768px) {
+    .error__link {
+      top: 635px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .error__link {
+      top: 715px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  
