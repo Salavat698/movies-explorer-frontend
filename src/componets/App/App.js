@@ -10,7 +10,36 @@ import Register from '../Register/Register';
 import Error from '../Error/Error';
 import Profile from '../Profile/Profile';
 import SavedMovies from '../SavedMovies/SavedMovies';
-function App(){
+import InfoTooltip from '../InfoTooltip/InfoTooltip';
+import auth from '../../utils/auth';
+// import api from '../utils/api';
+
+
+function App(props){
+
+
+     // хук для InfoTooltip показать попап успешно
+     const [isSuccess,setisSuccess] = React.useState(false)
+     const [stateOpenPopup,setStateOpenPopup] = React.useState(false)
+    // регистрация
+  function onRegister (e){
+    const {name,email,password}= e;
+
+    auth.register({name,email,password})
+    .then((res) => {
+        
+        if(res.status === 200){
+            setStateOpenPopup(true)
+            setisSuccess(true)
+            setTimeout(()=>{props.history.push('/signin')}, 3000)
+          } else if(res.status === 409 ||res.status === 403) {
+            setisSuccess(false)
+            setStateOpenPopup(true)
+            console.log('Что то пошло не так')
+          }
+          
+        }).catch((err) => console.log(err));
+}
 
     return(
         <div className='page'>
@@ -49,7 +78,9 @@ function App(){
                 exact
                 path="/signup" 
                 component={() => 
-                <Register/>}
+                <Register
+                onRegister={onRegister}
+                />}
             />
 
             <Route 
@@ -66,7 +97,10 @@ function App(){
                 <Error />}
               />
             </Switch>
-       
+            <InfoTooltip
+                isSuccess={isSuccess} 
+                stateOpenPopup={stateOpenPopup}
+            />
         </div>
     )
 }

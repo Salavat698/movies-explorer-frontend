@@ -23,6 +23,8 @@
 @import url(./blocks/burger-menu/burger-menu.css);
 @import url(./blocks/active.css);
 
+/* blocks infotooltip */
+@import url(./componets/InfoTooltip/Infotooltip.css);
 /* blocks form */
 @import url(./blocks/form/form.css);
 @import url(./blocks/form/__status-ask/from__status-ask.css);
