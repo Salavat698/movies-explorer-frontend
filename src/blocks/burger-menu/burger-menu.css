@@ -1,7 +1,7 @@
 .menu-btn{
   display: none;
-  position: absolute;
-  top: 80px;
+  position: fixed;
+  top: 43px;
   right:30px;
   width: 26px;
   height: 26px;
@@ -22,7 +22,6 @@
   transition-duration: .25s;
 }
 .menu-btn > span::before {
-  
   content: '';
   top: -8px;
 }
@@ -40,12 +39,12 @@
   /* right: 0; */
   right: -100%;
   z-index: 2;
-  max-width: 520px;
+  width: 520px;
   height: 100%;
   margin: 0;
   padding: 100px 0;
   list-style: none;
-  background-color: #ECEFF1;
+  background: #FFFFFF;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
 
@@ -96,6 +95,7 @@
 }
 
 .menubox__title{
+  margin: 0;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -105,6 +105,7 @@
   color: #000000;
 }
 .menubox__wrapper{
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,19 +113,19 @@
 .menubox__film{
   display: flex;
   align-self: center;
-  margin-top: 26px;
+  margin-top: 28px;
 
 }
 .menubox__film-save{
   display: flex;
   align-self: center;
-  margin-top: 26px;
+  margin-top: 22px;
   text-decoration: none;
 }
 .menubox__profile{
   display: flex;
   align-self: center;
-  margin: 200px;
+  margin-top: 340px;
 }
 
 @media (max-width:768px) {
@@ -142,4 +143,10 @@
     display: none;
   }
 }
+@media (max-width:600px) {
+  .menubox {
+    max-width: 320px;
+  }
+}
+
 

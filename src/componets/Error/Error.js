@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 function Error(props) {
   const history = useHistory();
   const handleBackClick = () => {
-    props.pathErrorHandler(false);
+    // props.pathErrorHandler(false);
     history.goBack();
   }
   return (

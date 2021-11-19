@@ -9,7 +9,7 @@
     margin: 0;
     position: absolute;
     transform:translate(650%,-400%);
-    /* background-image: url(../../../images/close-icon.svg); */
+    background-image: url('../../../../images/close-icon.svg');
     background-repeat: no-repeat;
     background-size: cover;
     outline-style: none;

@@ -4,12 +4,14 @@ import SearchForm from '../SearchForm/SearchForm';
 import HeaderSearch from '../HeaderSearch/HeaderSearch';
 
 
-function SavedMovies() {
+function SavedMovies(props) {
   return (
     <div className='saved-movies'>
         <HeaderSearch/>
         <SearchForm/>
-        <MoviesCardList/>
+        <MoviesCardList
+          stateBtnDelet={props.stateBtnDelet}
+        />
     </div>
   )
 }

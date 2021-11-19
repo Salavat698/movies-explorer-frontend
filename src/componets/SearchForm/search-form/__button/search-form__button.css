@@ -1,11 +1,8 @@
 .search-form__button {
-  display: flex;
   flex-direction: row;
-  background-color: transparent;
   border: none;
-  background-image: url(../../../../images/find_icon.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #000000;
+  border-radius: 48px;
   width: 140px;
   height: 34px;
   padding: 0;
@@ -14,6 +11,13 @@
   transition: all .2s ease-in-out;
   margin-right: 30px;
   outline: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .search-form__button:hover {
