@@ -28,8 +28,7 @@ function App(props){
      // хук для InfoTooltip показать попап успешно
      const [isSuccess,setisSuccess] = React.useState()
      const [stateOpenPopup,setStateOpenPopup] = React.useState()
-      //  стейит переменная для автризаций или залогирование
-    const [loggedIn,setloggedIn] = React.useState(false)
+ 
 
      function closeAllPopups(){
         // setIsEditAvatarPopupOpen(false)
@@ -117,7 +116,8 @@ const [emailData,setEmailData] = React.useState({})
     //         }).catch((err) => console.log(err));
             
     // }
-
+     //  стейит переменная для автризаций или залогирование
+     const [loggedIn,setloggedIn] = React.useState(true)
     return(
         <div className='page'>
         <CurrentMoviesContext.Provider value={currentMovies}>
@@ -125,7 +125,7 @@ const [emailData,setEmailData] = React.useState({})
             <Switch>
 
             {/* <Route exact path="/">
-                  {loggedIn ? <Redirect to="/auth"/> : <Redirect to="/page"/>}
+                  {loggedIn ? <Redirect to="/movies"/> : <Redirect to="/"/>}
             </Route> */}
 
             <Route 
@@ -139,29 +139,29 @@ const [emailData,setEmailData] = React.useState({})
                     </>
                   }
               />
-
           
-               <Route 
-                                exact
-                                path="/movies" 
-                                component={() => 
-                                <Movies/>}
+               <ProtectedRoute 
+                 path="/movies"
+                 loggedIn={loggedIn}
+                 component={() => 
+                  <Movies/>}
                 />
-                <Route 
-                                exact
-                                path="/saved-movies" 
-                                component={() => 
-                                <SavedMovies
-                                stateBtnDelet={stateBtnDelet}
-                                />}
-                  />
-                  <Route 
-                                exact
-                                path="/profile" 
-                                component={() => 
-                                <Profile/>}
+
+                <ProtectedRoute 
+                  path="/saved-movies"
+                  loggedIn={loggedIn}
+                  component={() => 
+                      <SavedMovies
+                      stateBtnDelet={stateBtnDelet}
+                    />}
                   />
 
+                <ProtectedRoute
+                    loggedIn={loggedIn}
+                    path="/profile" 
+                      component={() => 
+                        <Profile/>}
+                  />
 
                 <Route 
                     exact
