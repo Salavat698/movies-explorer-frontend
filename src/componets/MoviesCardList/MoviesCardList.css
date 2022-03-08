@@ -23,6 +23,13 @@
     border-radius: 6px;
     width: 320px;
     height: 36px;
+    border:none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.movie-card-list__result{
+    align-self: center;
 }
 @media (max-width:1350px) {
     .movie-card-list__catalog{

@@ -1,0 +1,31 @@
+.responseError{
+    display: none;
+    min-height: 30px;
+    border: 0;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: #FF0000;
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    min-width: 50px;
+    justify-content: center;
+}
+.responseError__active{
+    display: flex;
+}
+.responseError__close{
+    margin-top: -3px;
+    width: 26px;
+    height: 25px;
+    margin-left: 10px;
+    background-color: #FF0000;
+    border: none;
+    cursor: pointer;
+    background-image: url('../../images/close-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline-style: none;
+}

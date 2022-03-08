@@ -1,13 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Route, Switch, Redirect ,withRouter,Link} from 'react-router-dom';
+import {withRouter,Link} from 'react-router-dom';
 import headerLogo from '../../images/logo.svg'
 import profileBtn from '../../images/icon__COLOR_icon-main.svg'
 
-import SearchForm from '../SearchForm/SearchForm';
-import MoviesCardList from '../MoviesCardList/MoviesCardList';
 function HeaderSearch(){
-
+      
     return(
     <>
 
@@ -29,15 +26,15 @@ function HeaderSearch(){
 
             </div>
 
-            <div class="burger-menu">
+            <div className="burger-menu">
                 <input id="menu-toggle" type="checkbox" />
                 
-                <label class="menu-btn" for="menu-toggle">
+                <label className="menu-btn" htmlFor="menu-toggle">
                 <span></span>
                 </label>
             
-                <ul class="menubox">
-                    <p class="menubox__title">Главное</p>
+                <ul className="menubox">
+                    <p className="menubox__title">Главное</p>
                     
                     <div className='menubox__wrapper'>
                         <Link className='headerSearch__film menubox__film' to="/movies">Фильмы</Link>

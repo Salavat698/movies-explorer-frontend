@@ -1,6 +1,6 @@
 
 // const BASE_URL = 'https://slt116.nomoredomains.club';
-const BASE_URL = 'http://localhost:3001';
+const BASE_URL = 'http://localhost:3003';
 
 class Auth {
   constructor({password,email}) {
@@ -64,6 +64,16 @@ class Auth {
       return this._checkStatus(result)
     })
   }
+  signOut() {
+    return fetch(`${BASE_URL}/signout`, {
+      method: 'DELETE',
+      headers: this._headers,
+      credentials: 'include',
+    })
+    .then(result => {
+      return this._checkStatus(result)
+    })
+  };
 }
 const auth= new Auth({password:'',email:''})
 export default auth;

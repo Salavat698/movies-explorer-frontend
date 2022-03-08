@@ -1,5 +1,4 @@
 import React from 'react';
-import headerLogo from '../../images/logo.svg'
 import mainLogo from '../../images/text__COLOR_landing-logo.svg'
 import { Link ,withRouter} from 'react-router-dom'; 
 function Banner(){

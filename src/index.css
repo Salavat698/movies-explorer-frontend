@@ -18,7 +18,10 @@
 @import url(./componets/SearchForm/SearchForm.css);
 @import url(./componets/HeaderSearch/HeaderSearch.css);
 @import url(./componets/MoviesCardList/MoviesCardList.css);
+@import url(./componets/MoviesCardListSave/MoviesCardListSave.css);
 @import url(./componets/MovieCard/MovieCard.css);
+@import url(./componets/Preloader/Preloader.css);
+@import url(./componets/ResponseError/responseError.css);
 
 @import url(./blocks/burger-menu/burger-menu.css);
 @import url(./blocks/active.css);

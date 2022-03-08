@@ -1,4 +1,4 @@
-import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import MoviesCardListSave from '../MoviesCardListSave/MoviesCardListSave';
 
 import SearchForm from '../SearchForm/SearchForm';
 import HeaderSearch from '../HeaderSearch/HeaderSearch';
@@ -9,7 +9,9 @@ function SavedMovies(props) {
     <div className='saved-movies'>
         <HeaderSearch/>
         <SearchForm/>
-        <MoviesCardList
+        <MoviesCardListSave
+          currentSaveMovies={props.currentSaveMovies}
+          currentMovies={props.currentMovies}
           stateBtnDelet={props.stateBtnDelet}
         />
     </div>
